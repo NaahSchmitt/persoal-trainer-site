@@ -66,7 +66,6 @@
             cursor: pointer;
         }
 
-       
         .hero {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23222" width="1200" height="800"/><circle cx="600" cy="400" r="200" fill="%23ff6b35" opacity="0.1"/><rect x="100" y="300" width="80" height="200" fill="%23f7931e" opacity="0.2"/><rect x="1020" y="200" width="80" height="300" fill="%23ff6b35" opacity="0.2"/></svg>');
             background-size: cover;
@@ -112,7 +111,7 @@
             box-shadow: 0 10px 25px rgba(255, 107, 53, 0.4);
         }
 
-       
+      
         .section {
             padding: 5rem 0;
         }
@@ -134,6 +133,7 @@
             margin-right: auto;
         }
 
+       
         .about {
             background: #f8f9fa;
         }
@@ -173,7 +173,7 @@
             font-weight: bold;
         }
 
-       
+        
         .services-grid {
             display: flex;
             gap: 2rem;
@@ -221,7 +221,7 @@
             line-height: 1.6;
         }
 
-        
+       
         .benefits {
             background: linear-gradient(135deg, #ff6b35, #f7931e);
             color: white;
@@ -254,3 +254,212 @@
         .benefit-item p {
             opacity: 0.9;
         }
+
+        .contact {
+            background: #f8f9fa;
+        }
+
+        .contact-content {
+            display: flex;
+            gap: 3rem;
+            align-items: flex-start;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            color: #ff6b35;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .form-container {
+            flex: 1;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #ff6b35;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            background: linear-gradient(45deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+        }
+
+       
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+       
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: linear-gradient(135deg, #ff6b35, #f7931e);
+                flex-direction: column;
+                padding: 1rem 0;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-content,
+            .contact-content {
+                flex-direction: column;
+            }
+
+            .about-image {
+                height: 250px;
+            }
+
+            .services-grid,
+            .benefits-grid {
+                flex-direction: column;
+            }
+
+            .service-card,
+            .benefit-item {
+                min-width: auto;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .section {
+                padding: 3rem 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .form-container {
+                padding: 1.5rem;
+            }
+        }
+
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+ 
